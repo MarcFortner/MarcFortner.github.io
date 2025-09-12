@@ -2,13 +2,13 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 70;
+    padding: 0;
     background-color: #f9f9f9;
     color: #333;
     font-size: 18px;
     line-height: 1.6;
     min-height: 100vh;
-    display: flex;
+    display: fixed;
     flex-direction: column;
 }
 header {
@@ -74,7 +74,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed; /* mantiene la foto quieta mientras el contenido se desplaza */
   height: 100vh; /* desde la parte superior hasta el fondo de la pantalla */
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   position: fixed;
