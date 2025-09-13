@@ -266,3 +266,55 @@ footer {
   transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(0,0,0,0.09);
 }
+/* ===== Hero general ===== */
+.page-hero {
+  position: relative; /* para overlay */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+/* Overlay oscuro para mejorar contraste */
+.page-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4); /* ajusta opacidad según necesites */
+  z-index: 1;
+}
+
+.page-hero h1 {
+  position: relative; /* sobre overlay */
+  z-index: 2;
+  font-size: 3rem; /* ajusta según tu diseño */
+  line-height: 1.2;
+}
+
+/* ===== Hero de inicio (pantalla completa) ===== */
+.page-hero.inicio {
+  height: 100vh; /* ocupa toda la pantalla */
+}
+
+/* ===== Hero de otras páginas (70% de pantalla) ===== */
+.page-hero.otros {
+  height: 70vh;
+}
+
+/* Opcional: responsive */
+@media (max-width: 768px) {
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+  .page-hero {
+    padding: 0 1rem;
+  }
+}
