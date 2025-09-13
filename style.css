@@ -57,7 +57,7 @@ header {
   text-align: center;
 
   position: relative;
-  margin-top: 56px; /* espacio por el nav fijo */
+  margin-top: 70px; /* espacio por el nav fijo */
 }
 
 header::before {
