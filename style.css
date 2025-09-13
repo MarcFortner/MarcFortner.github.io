@@ -44,6 +44,42 @@
 }
 
 /* ===== NAVEGACIÓN ===== */
+/* NAV FIJO ARRIBA */
+nav {
+  position: fixed;       /* hace que quede siempre arriba */
+  top: 0;                /* posición superior */
+  left: 0;               /* alineado a la izquierda */
+  width: 100%;           /* ocupa todo el ancho */
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  z-index: 1000;         /* para que quede encima del contenido */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* sombra opcional */
+}
+
+/* Ajuste para los ul/li del nav */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a.active {
+  border-bottom: 2px solid #fff;
+}
+
+/* Para que el contenido no quede debajo del nav */
+body {
+  padding-top: 70px; /* ajusta según la altura de tu nav */
+}
 nav {
   background-color: #2c3e50;
   padding: 1rem 2rem;
