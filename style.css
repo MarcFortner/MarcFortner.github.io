@@ -214,10 +214,23 @@ footer {
   border-radius: 8px 8px 0 0;
 }
 
+
+
+footer {
+  position: relative;
+  background-color: #2c3e50;
+  color: white;
+  text-align: left;
+  padding: 20px 40px;
+  margin-top: auto;
+  margin-bottom: 10px;
+  border-radius: 8px 8px 0 0;
+}
+
 .footer-logo {
   position: absolute;
-  right: 1cm;          /* ✅ separación fija de 1 cm */
-  top: 50%;
-  transform: translateY(-50%);
-  height: 40px;        /* ajusta según el tamaño que quieras */
+  right: 1cm;            /* separación desde el borde derecho */
+  top: -20px;            /* número negativo = sobresale hacia arriba */
+  height: 60px;          /* más grande para que sobresalga bonito */
   width: auto;
+}
