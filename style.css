@@ -219,3 +219,50 @@ footer {
   margin-bottom: 10px; /* ✅ separación extra del borde inferior */
   border-radius: 8px 8px 0 0; /* opcional: esquinas redondeadas arriba */
 }
+.recursos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 3rem auto;
+}
+
+.recurso-card {
+  background: linear-gradient(180deg, #fff 0%, #fff7ef 100%);
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+  text-align: center;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.recurso-card h3 {
+  margin-top: 0;
+  color: #2b6b7a;
+}
+
+.recurso-card p {
+  color: #444;
+}
+
+.recurso-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 14px;
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.recurso-card a:hover {
+  background-color: #1a242f;
+}
+
+.recurso-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.09);
+}
