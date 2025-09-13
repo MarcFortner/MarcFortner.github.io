@@ -137,3 +137,81 @@ footer {
     padding: 1rem;
   }
 }
+.map-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  margin: 2rem auto;
+  max-width: 1100px;
+  align-items: center;
+  gap: 20px;
+}
+
+.map-text {
+  flex: 1 1 250px;
+}
+
+.map-text h2 {
+  margin: 0 0 8px 0;
+  font-size: 1.3rem;
+  color: #2c3e50;
+}
+
+.map-text p {
+  margin: 0;
+  color: #555;
+}
+
+.map-container iframe {
+  flex: 1 1 500px;
+  width: 100%;      /* ✅ ocupa todo el ancho disponible */
+  max-width: 600px; /* ✅ límite en pantallas grandes */
+  height: 400px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 720px) {
+  .map-container {
+    flex-direction: column;   /* mapa debajo del texto */
+    padding: 10px;
+  }
+
+  .map-container iframe {
+    width: 100%;   /* ✅ ocupa todo el ancho del móvil */
+    height: 300px; /* ✅ altura más pequeña en móviles */
+    max-width: 100%;
+  }
+
+  .map-text {
+    text-align: center;
+  }
+}
+/* ===== Layout para mantener el footer abajo ===== */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* ocupa todo el espacio disponible */
+}
+
+footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* empuja el footer hacia abajo */
+}
