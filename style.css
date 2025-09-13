@@ -155,3 +155,7 @@ footer {
   transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(0,0,0,0.09);
 }
+/* Fuente global: Ubuntu */
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
