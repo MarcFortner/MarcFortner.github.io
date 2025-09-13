@@ -165,3 +165,40 @@ body {
   padding-left: 2rem;   /* espacio desde la izquierda */
   padding-right: 4rem;  /* espacio desde la derecha */
 }
+
+/* Marco para mapa y dirección */
+.map-frame {
+  display: flex;               /* coloca dirección y mapa lado a lado */
+  align-items: center;         /* centra verticalmente */
+  border: 2px solid #2c3e50;  /* marco */
+  border-radius: 12px;         /* esquinas redondeadas */
+  padding: 1rem;
+  gap: 2rem;                   /* espacio entre dirección y mapa */
+  max-width: 1100px;
+  margin: 2rem auto;           /* centrado horizontal */
+  background-color: #fdfdfd;   /* opcional: fondo claro dentro del marco */
+}
+
+/* Dirección a la izquierda */
+.map-text {
+  flex: 1;                     /* ocupa espacio proporcional */
+}
+
+/* Mapa a la derecha */
+.map-frame iframe {
+  flex: 2;                     /* ocupa más espacio que la dirección */
+  border: 0;
+  width: 100%;
+  height: 300px;
+  border-radius: 8px;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 768px) {
+  .map-frame {
+    flex-direction: column;    /* dirección arriba, mapa abajo en móviles */
+  }
+  .map-frame iframe {
+    height: 250px;
+  }
+}
