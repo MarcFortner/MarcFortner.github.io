@@ -160,3 +160,8 @@ footer {
 body {
   font-family: 'Ubuntu', sans-serif;
 }
+.main-content {
+  padding-top: 2rem;    /* espacio desde arriba */
+  padding-left: 2rem;   /* espacio desde la izquierda */
+  padding-right: 4rem;  /* espacio desde la derecha */
+}
