@@ -154,16 +154,17 @@ footer {
 
 .recurso-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.09);
+  box-shadow: 0 ;14px 30px rgba(0,0,0,0.09);
 }
 /* Fuente global: Ubuntu */
 body {
   font-family: 'Ubuntu', sans-serif;
 }
 .main-content {
-  padding-top: 2rem;    /* espacio desde arriba */
-  padding-left: 2rem;   /* espacio desde la izquierda */
+  padding-top: 5rem;    /* espacio desde arriba */
+  padding-left: 10rem;   /* espacio desde la izquierda */
   padding-right: 4rem;  /* espacio desde la derecha */
+  padding-bottom:50rem;
 }
 
 /* Marco para mapa y dirección */
