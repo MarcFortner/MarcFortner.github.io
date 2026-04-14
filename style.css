@@ -40,7 +40,7 @@
 .page-hero.otros { height: 70vh; }   /* Otras páginas 70% de pantalla */
 
 /* ===== RESPONSIVE HERO ===== */
-@media (max-width: 768px) {
+@media (max-width: 77%) {
   .page-hero h1 { font-size: 2rem; }
   .page-hero { padding: 0 1rem; }
 }
