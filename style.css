@@ -41,12 +41,7 @@
 
 /* ===== RESPONSIVE HERO ===== */
 @media (max-width: 768px) {
-    .container {
-    flex-direction: column;
-  }
-
-  .menu {
-    font-size: 14px;
+    
   .page-hero h1 { font-size: 2rem; }
   .page-hero { padding: 0 1rem; }
 }
