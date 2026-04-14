@@ -1,4 +1,3 @@
-
 /* ===== HERO GENERAL ===== */
 .page-hero {
   position: relative; /* para overlay */
@@ -41,7 +40,6 @@
 
 /* ===== RESPONSIVE HERO ===== */
 @media (max-width: 768px) {
-    
   .page-hero h1 { font-size: 2rem; }
   .page-hero { padding: 0 1rem; }
 }
