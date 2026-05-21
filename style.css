@@ -232,8 +232,7 @@ footer {
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
 
-   .page-hero {
-    background-attachment: scroll;
+
 
   .page-hero h1 {
     font-size: 2rem;
