@@ -17,15 +17,19 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 
-  /* mejor para móviles */
-  background-attachment: scroll;
-
-  color: rgb(202, 200, 196);
-  text-align: center;
+ 
+  background-attachment: scroll; /* base segura */
 
   display: flex;
   justify-content: center;
   align-items: center;
+
+  color: rgb(202, 200, 196);
+  text-align: center;
+
+ 
+
+ 
 
   padding: 0 1rem;
   overflow: hidden;
@@ -231,7 +235,10 @@ footer {
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-
+  .page-hero {
+    background-attachment: fixed;
+  }
+}
 
 
   .page-hero h1 {
