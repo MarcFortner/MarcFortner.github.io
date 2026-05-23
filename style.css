@@ -234,11 +234,7 @@ footer {
 }
 
 /* ===== RESPONSIVE ===== */
-@media (max-width: 768px) {
-  .page-hero {
-    background-attachment: fixed;
-  }
-}
+
 
 
   .page-hero h1 {
