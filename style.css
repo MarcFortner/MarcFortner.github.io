@@ -18,7 +18,7 @@ body {
   background-repeat: no-repeat;
 
  
-  background-attachment: scroll; /* base segura */
+  background-attachment: fixed; /* base segura */
 
   display: flex;
   justify-content: center;
