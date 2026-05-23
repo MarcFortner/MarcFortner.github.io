@@ -275,33 +275,48 @@ footer {
   }
 
   footer {
-    text-align: center;
-    padding-top: 50px;
+     position: relative;
+  background-color: #2c3e50;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 20px;
+  min-height: 60px;
+
+  margin-top: auto;
+  border-radius: 8px 8px 0 0;
+
   }
+footer p {
+  margin: 0;
+  text-align: left;
+}
 
   .footer-logo {
-    position: static;
-    display: block;
-    margin: 0 auto 1rem auto;
+    height: 45px;
+  width: auto;
   }
 }
 
 /* ===== MÓVILES PEQUEÑOS ===== */
-@media (max-width: 480px) {
-
-  .page-hero h1 {
-    font-size: 1.6rem;
-  }
-
-  nav ul {
+@media (max-width: 768px) {
+  footer {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    gap: 10px;
+    padding: 16px;
   }
 
-  .recursos {
-    padding: 1rem;
+  footer p {
+    text-align: center;
   }
 
-  .recurso-card {
-    padding: 15px;
+  .footer-logo {
+    order: 2; /* logo debajo */
   }
 }
